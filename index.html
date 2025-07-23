@@ -1,41 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ATYRA INDUSTRADES</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>ATYRA INDUSTRADES</h1>
-    <p>INNOVATIVE INDUSTRIAL EQUIPMENT SOLUTIONS</p>
-    <p>📞 +91 9123253263</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atyra Industrades</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Hero Section -->
+    <section class="bg-blue-900 text-white py-20 text-center">
+      <h1 class="text-4xl font-bold">ATYRA INDUSTRADES</h1>
+      <p class="text-xl mt-4">Trading with Trust, Growing with Purpose</p>
+    </section>
 
-  <section>
-    <div class="pdf-container">
-      <iframe
-        src="Files\Atyra_Industrades_Brochure.pdf"
-      ></iframe>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="py-12 px-6 md:px-20 bg-white">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">
+        About the Company
+      </h2>
+      <p class="text-lg leading-relaxed">
+        Atyra Industrades is a dynamic venture driven by innovation, integrity,
+        and impact. We believe in delivering smart solutions with honesty,
+        quality, and long-term value for all.
+      </p>
 
-  <section>
-    <h1>🚧 Site Under Construction 🚧</h1>
-    <p>We're working hard to bring you something awesome. Stay tuned!</p>
-    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWQ4cWI5MDB3ZTdsd2JnN2FyOXdvNjUxNjhqcnJmdnk5bGp2N3gwaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jZeZtoObz3wPPcjAhj/giphy.gif" alt="Under Construction GIF" />
-  </section>
+      <!-- Download Brochure Button -->
+  <a
+    href="Files/Atyra_Industrades_Brochure.pdf"
+    download="Atyra-Industrades-Brochure.pdf"
+    class="mt-8 inline-block bg-white text-blue-900 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-200 transition"
+  >
+    Download Brochure
+  </a>
+    </section>
 
+    <!-- Company Goals -->
+    <section class="py-12 px-6 md:px-20 bg-gray-100">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">
+        Company Goals
+      </h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>
+          To become one of India’s most trusted and efficient trading companies.
+        </li>
+        <li>
+          To build a strong and reliable network across industries and regions.
+        </li>
+        <li>
+          To expand our reach nationally and internationally through strategic
+          partnerships.
+        </li>
+        <li>
+          To continuously improve operational efficiency using smart,
+          tech-enabled processes.
+        </li>
+        <li>
+          To deliver measurable value to clients by combining speed, scale, and
+          service.
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>📍 G-429N Pole, Veer bazaar road, Sangam Vihar, New Delhi, DL 110080</p>
-    <p>📞 +91 9123253263</p>
-  </section>
+    <!-- Products Section -->
+    <section class="py-12 px-6 md:px-20 bg-white">
+      <h2 class="text-2xl font-bold mb-6 border-b border-gray-300 pb-2">
+        Our Products
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product Cards -->
 
-  <footer>
-    <p>&copy; 2025 ATYRA INDUSTRADES</p>
-  </footer>
-</body>
+        <!-- Induction Motor Product Card -->
+        <div
+          onclick="openModal('induction')"
+          class="bg-blue-100 p-4 rounded-xl shadow cursor-pointer hover:bg-blue-200 transition"
+        >
+          <h3 class="font-semibold text-lg">
+            Induction Motors (3Phase / Crane Duty)
+          </h3>
+        </div>
+
+        <!-- Induction Motor Modal with 2 sub-cards -->
+        <div
+          id="modal-induction"
+          class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+        >
+          <div class="bg-white p-6 rounded-lg max-w-2xl w-full relative">
+            <button
+              onclick="closeModal('induction')"
+              class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl"
+            >
+              &times;
+            </button>
+            <h2 class="text-xl font-bold mb-4">Induction Motors</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Slip Ring Motor Card -->
+              <div class="bg-gray-100 p-4 rounded-lg shadow">
+                <img
+                  src="images/slip-ring-motor.jpg"
+                  alt="Slip Ring Motor"
+                  class="mb-3 rounded shadow"
+                />
+                <h3 class="font-semibold text-lg">Slip Ring Motor</h3>
+                <p class="text-sm text-gray-700 mt-2">
+                  Ideal for applications requiring high starting torque and
+                  controlled acceleration. Common in cranes, mills, and
+                  elevators.
+                </p>
+              </div>
+
+              <!-- Squirrel Cage Motor Card -->
+              <div class="bg-gray-100 p-4 rounded-lg shadow">
+                <img
+                  src="images/squirrel-cage-motor.jpg"
+                  alt="Squirrel Cage Motor"
+                  class="mb-3 rounded shadow"
+                />
+                <h3 class="font-semibold text-lg">Squirrel Cage Motor</h3>
+                <p class="text-sm text-gray-700 mt-2">
+                  Efficient and low-maintenance motor suitable for
+                  continuous-duty industrial operations. Known for ruggedness
+                  and simplicity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-100 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg">Industrial Pump Motors</h3>
+        </div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg">
+            Control Panels (VFD, AC Drive, APFC, Star/Delta, DOL)
+          </h3>
+        </div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg">
+            LT Distribution & Soft Starter Panels
+          </h3>
+        </div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg">
+            Slip Ring & Squirrel Cage Motors
+          </h3>
+        </div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg">
+            Standardised Pumps (ETANORM / MegaCPK)
+          </h3>
+        </div>
+        <div class="bg-blue-100 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg">
+            EOT Crane Spares & Control Equipment
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-12 px-6 md:px-20 bg-gray-100">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">
+        Contact Us
+      </h2>
+      <p class="text-lg mb-2">
+        <strong>Address:</strong> G-429N, Veer Bazar Road, Sangam Vihar, New
+        Delhi - 110080
+      </p>
+      <p class="text-lg mb-2">
+        <strong>Email:</strong>
+        <a href="mailto:salesatyra@gmail.com" class="text-blue-700 underline"
+          >salesatyra@gmail.com</a
+        >
+      </p>
+      <p class="text-lg mb-2"><strong>Phone:</strong> 9123253263, 9934701451</p>
+      <p class="text-lg">
+        <strong>Website:</strong>
+        <a href="http://www.atyraindustrades.in" class="text-blue-700 underline"
+          >www.atyraindustrades.in</a
+        >
+      </p>
+    </section>
+
+    <footer class="text-center py-6 bg-blue-900 text-white">
+      &copy; 2025 Atyra Industrades. All rights reserved.
+    </footer>
+
+    <!-- Modal Scripts -->
+    <script>
+      function openModal(id) {
+        document.getElementById(`modal-${id}`).classList.remove("hidden");
+      }
+      function closeModal(id) {
+        document.getElementById(`modal-${id}`).classList.add("hidden");
+      }
+    </script>
+  </body>
 </html>
